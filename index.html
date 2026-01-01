@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>College Event Management</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+  <header>
+    <h1>College Event Management Portal</h1>
+    <p>Manage college events, clubs & registrations</p>
+  </header>
+
+  <!-- Dashboard -->
+  <div class="dashboard">
+    <div class="stat upcoming">Upcoming <span id="upcomingCount">0</span></div>
+    <div class="stat ongoing">Ongoing <span id="ongoingCount">0</span></div>
+    <div class="stat completed">Completed <span id="completedCount">0</span></div>
+  </div>
+
+  <!-- Event Form -->
+  <div class="card">
+    <form id="eventForm">
+      <input type="text" id="title" placeholder="Event Name" required>
+      <input type="text" id="club" placeholder="Organizing Club" required>
+      <input type="date" id="date" required>
+      <input type="text" id="venue" placeholder="Venue" required>
+      <input type="number" id="participants" placeholder="Participants Count" min="0">
+      <button type="submit">Save Event</button>
+    </form>
+  </div>
+
+  <!-- Filters -->
+  <div class="card filters">
+    <input type="text" id="search" placeholder="Search event or club">
+    <select id="filterStatus">
+      <option value="All">All Status</option>
+      <option value="Upcoming">Upcoming</option>
+      <option value="Ongoing">Ongoing</option>
+      <option value="Completed">Completed</option>
+    </select>
+  </div>
+
+  <!-- Event Cards -->
+  <div id="eventList" class="event-list"></div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
