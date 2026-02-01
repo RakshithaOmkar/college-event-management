@@ -1,5 +1,5 @@
 # college-event-management
-# 🎓 College Event Management Portal
+# 🎓 College Event Management Portal :  https://697ef225c4c1ac3fbef26947--elegant-pavlova-f41035.netlify.app/
 
 A modern, responsive web application to manage college events, clubs, and participant registrations.  
 Built using **HTML, CSS, and Vanilla JavaScript**, this project focuses on clean UI, real-world functionality, and good frontend practices.
